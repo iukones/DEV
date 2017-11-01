@@ -106,7 +106,7 @@ button:focus {
 .sidebar h2 {
   color: #fff;
   font-family: "Playfair Display", serif;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 /* line 93, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
