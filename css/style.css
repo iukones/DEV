@@ -665,6 +665,8 @@ button:focus {
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  border: 3px solid #100;
+  box-shadow: 0 10px 0 -5px #F1511B, 0 20px 0 -10px #66ccff, 0 30px 0 -16px #dedcb9;
 }
 
 /* line 581, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
