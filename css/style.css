@@ -28,7 +28,8 @@
 body {
   background: rgba(243, 239, 224, 0.9);
   /* color: #262626; */
-  color: #7b7b7b;
+  /* color: #7b7b7b; */
+  color: #100;
   font-weight: 400;
   font-size: 16px/28px;
   font-family: "Martel Sans", Arial, sans-serif;
@@ -666,7 +667,7 @@ button:focus {
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   border: 3px solid #100;
-  box-shadow: 0 10px 0 -5px #F1511B, 0 20px 0 -10px #66ccff, 0 30px 0 -16px #dedcb9;
+  box-shadow: 0 10px 0 -5px #53C8FC, 0 20px 0 -10px #a29e5e, 0 30px 0 -16px #dedcb9;
 }
 
 /* line 581, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
@@ -760,7 +761,7 @@ button:focus {
   height: 100vh;
   pointer-events: auto;
   visibility: visible;
-  color: #1C4C55;
+  /* color: #1C4C55; */
 }
 
 /* scroll helper wrap */
@@ -805,7 +806,8 @@ button:focus {
 .category--full {
   font-size: 1.25em;
   margin-bottom: 20px;
-  color: rgba(83, 200, 252, 0.9);
+  color: #a29e5e;
+  /* color: rgba(83, 200, 252, 0.9); */
 }
 
 /* line 717, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
@@ -935,6 +937,7 @@ button:focus {
   opacity: 1;
   -webkit-transition: opacity 0.5s 0.25s;
   transition: opacity 0.5s 0.25s;
+  color: #100;
 }
 
 /* close button (for content and sidebar) */
@@ -1333,12 +1336,12 @@ body {
 
 /* line 156, C:/Users/imartinez/Documents/Proyect/iukones/scss/style.scss */
 .divider {
-  background: rgba(83, 200, 252, 0.9);
+  background: #a29e5e;
   height: 4rem;
   margin: 0 auto;
   width: .0625rem;
   margin-top: 2.5rem;
-  margin-bottom: 3.4375rem;
+  margin-bottom: 2.5rem;
 }
 
 /* line 165, C:/Users/imartinez/Documents/Proyect/iukones/scss/style.scss */
@@ -1502,7 +1505,8 @@ body {
 /* line 305, C:/Users/imartinez/Documents/Proyect/iukones/scss/style.scss */
 .work-callout_with-border {
   border-style: solid;
-  border-color: #D5F2F7;
+  border-color: #100;
+  /* border-color: #D5F2F7; */
   border-width: 1em 1em 0 1em;
 }
 
@@ -1567,7 +1571,12 @@ body {
 @media (min-width: 60em) {
   /* line 362, C:/Users/imartinez/Documents/Proyect/iukones/scss/style.scss */
   .work-callout--0 {
-    background: url(../img/marvi-pro.jpg) no-repeat center center;
+    background: url(../img/img--oamm.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+  }
+  .work-callout--2 {
+    background: url(../img/img--specific-clarity.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
   }
@@ -1657,7 +1666,8 @@ body {
 
 /* line 437, C:/Users/imartinez/Documents/Proyect/iukones/scss/style.scss */
 .work-callout--title a {
-  color: #50B7C8;
+  /* color: #50B7C8; */
+  color: #1C4C55;
   margin: 0;
   padding: 0;
   line-height: 1em;
