@@ -331,7 +331,7 @@ button:focus {
   height: 25px;
   top: 14px;
   left: 14px;
-  cursor: pointer;
+  cursor: url(../img/cursor-rockon.png), auto;
   background: none;
   border: none;
   display: none;
@@ -960,7 +960,7 @@ button:focus {
   right: 0;
   font-size: 24px;
   color: #F1511B;
-  cursor: pointer;
+  cursor: url(../img/cursor-rockon.png), auto;
   pointer-events: none;
   padding: 20px 40px;
   opacity: 0;
@@ -976,7 +976,7 @@ button:focus {
 
 /* line 852, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
 .close-button span {
-  display: none;
+  /* display: none; */
 }
 
 /* line 856, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
@@ -1167,7 +1167,8 @@ button:focus {
   }
   /* line 162, C:/Users/imartinez/Documents/Proyect/iukones/scss/_mediaqueries.scss */
   .content .close-button {
-    padding: 10px 20px;
+    padding: 19px 25px;
+    /* padding: 10px 20px; */
   }
   /* line 165, C:/Users/imartinez/Documents/Proyect/iukones/scss/_mediaqueries.scss */
   .content .close-button::before {
@@ -1266,7 +1267,7 @@ body {
   transition-delay: 0.15s;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   /* line 89, C:/Users/imartinez/Documents/Proyect/iukones/scss/style.scss */
   .sidebar,
   .grid {
@@ -1592,12 +1593,12 @@ body {
 @media (min-width: 60em) {
   /* line 362, C:/Users/imartinez/Documents/Proyect/iukones/scss/style.scss */
   .work-callout--0 {
-    background: url(../img/servicios.jpg) no-repeat center;
+    background: url(../img/trabajo.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
   }
   .work-callout--1 {
-    background: url(../img/servicios.jpg) no-repeat center;
+    background: url(../img/marvi-pro.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
   }

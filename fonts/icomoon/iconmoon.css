@@ -27,6 +27,9 @@
 .icon-pencil2:before {
   content: "\e906";
 }
+.icon-profile:before {
+  content: "\e923";
+}
 .icon-price-tags:before {
   content: "\e936";
 }
@@ -47,6 +50,12 @@
 }
 .icon-fire:before {
   content: "\e9a9";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-cross:before {
+  content: "\ea0f";
 }
 .icon-checkbox-checked:before {
   content: "\ea52";
@@ -86,6 +95,9 @@
 }
 .icon-linkedin:before {
   content: "\eac9";
+}
+.icon-file-pdf:before {
+  content: "\eadf";
 }
 .icon-html-five:before {
   content: "\eae4";
