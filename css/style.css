@@ -598,6 +598,7 @@ button:focus {
 /* line 510, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
 .meta__avatar {
   display: block;
+  /* border: 3px solid; */
   border-radius: 1%;
   margin: 2em auto;
   max-width: 100%;
@@ -926,6 +927,8 @@ button:focus {
 .content__item--show .meta--full .meta__avatar {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  border: 3px solid;
+  border-radius: 50%;
 }
 
 /* line 811, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
@@ -1603,12 +1606,12 @@ body {
     width: 100%;
   }
   .work-callout--2 {
-    background: url(../img/servicios.jpg) no-repeat center;
+    background: url(../img/app-album.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
   }
   .work-callout--3 {
-    background: url(../img/img--specific-clarity.jpg) no-repeat center;
+    background: url(../img/appRecibos2.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
   }
