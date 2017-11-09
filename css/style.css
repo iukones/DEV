@@ -1138,7 +1138,7 @@ button:focus {
   }
   /* line 137, C:/Users/imartinez/Documents/Proyect/iukones/scss/_mediaqueries.scss */
   .sidebar.sidebar--open {
-    background: url(../img/background_repeat.png) left top repeat rgba(40, 71, 112, 0.89);
+    background: url(../img/background_repeat.png) left top repeat rgba(40, 71, 112, 0.97);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     width: 100%;
