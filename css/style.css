@@ -950,6 +950,12 @@ button:focus {
   transition: opacity 0.5s 0.25s;
   color: #100;
 }
+.content__item--show.content__item .family {
+  display: block;
+  max-width: 100%;
+  height: auto;  
+}
+
 
 /* close button (for content and sidebar) */
 /* line 828, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
