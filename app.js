@@ -56,17 +56,44 @@ console.log(myVar);
 
 // the execution context - Code execution
 
-function b() {
-    console.log('llamada funcion b!')
-}
+// function b() {
+//     console.log('llamada funcion b!');
+// }
 
-b();
+// b();
 
-console.log(a);
+// console.log(a);
 
-var a = 'Hola Mundo!';
+// var a = 'Hola Mundo!';
 
-console.log(a);
+// console.log(a);
 
 
 // the execution context - Code execution
+
+// the Scope Chain
+
+// function b() {
+//     console.log(myVar);
+// }
+
+// function a() {
+//     var myVar = 2;
+//     b();   
+// }
+
+function a() {
+
+    function b() {
+        console.log(myVar);
+    }
+
+    // var myVar = 2;
+    b();   
+}
+
+var myVar = 1;
+a();
+// console.log(myVar);
+
+// the Scope Chain
