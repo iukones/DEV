@@ -82,18 +82,52 @@ console.log(myVar);
 //     b();   
 // }
 
-function a() {
+// function a() {
 
-    function b() {
-        console.log(myVar);
-    }
+//     function b() {
+//         console.log(myVar);
+//     }
 
-    // var myVar = 2;
-    b();   
-}
+//     // var myVar = 2;
+//     b();   
+// }
 
-var myVar = 1;
-a();
+// var myVar = 1;
+// a();
 // console.log(myVar);
 
 // the Scope Chain
+
+// Scope, ES6 y "let"
+
+// let a = 1;
+// let b = 2;
+
+// if (a > b) {
+//     let c = true;
+//     console.log(c);
+// }else{
+//     let c = false;
+//     console.log(c);
+// }
+
+// Scope, ES6 y "let"
+
+// ¿Que hay de las llamadas asincronas?
+function waitThreeSeconds() {
+    var ms = 10000 + new Date().getTime();
+    while (new Date() < ms) {}
+    console.log('finalizo función');
+}
+
+function clickHandler() {
+    console.log('evento Click!');
+}
+
+// escuchar el evento click
+document.addEventListener('click', clickHandler);
+
+waitThreeSeconds();
+console.log('finaliza la ejecución');
+
+// ¿Que hay de las llamadas asincronas?
