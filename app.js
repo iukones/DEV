@@ -32,7 +32,7 @@ console.log(myVar);
 // }
 
 // function a() {
-//     var myVar = 2;    
+//     var myVar = 2;
 //     b();
 // }
 
@@ -79,7 +79,7 @@ console.log(myVar);
 
 // function a() {
 //     var myVar = 2;
-//     b();   
+//     b();
 // }
 
 // function a() {
@@ -89,7 +89,7 @@ console.log(myVar);
 //     }
 
 //     // var myVar = 2;
-//     b();   
+//     b();
 // }
 
 // var myVar = 1;
@@ -114,20 +114,46 @@ console.log(myVar);
 // Scope, ES6 y "let"
 
 // ¿Que hay de las llamadas asincronas?
-function waitThreeSeconds() {
-    var ms = 10000 + new Date().getTime();
-    while (new Date() < ms) {}
-    console.log('finalizo función');
-}
+// function waitThreeSeconds() {
+//     var ms = 10000 + new Date().getTime();
+//     while (new Date() < ms) {}
+//     console.log('finalizo función');
+// }
 
-function clickHandler() {
-    console.log('evento Click!');
-}
+// function clickHandler() {
+//     console.log('evento Click!');
+// }
 
-// escuchar el evento click
-document.addEventListener('click', clickHandler);
+// // escuchar el evento click
+// document.addEventListener('click', clickHandler);
 
-waitThreeSeconds();
-console.log('finaliza la ejecución');
+// waitThreeSeconds();
+// console.log('finaliza la ejecución');
 
 // ¿Que hay de las llamadas asincronas?
+
+// Operadores en JS
+
+// var a = 4 + 3;
+// console.log(a);
+
+// var b = 5 >10;
+// console.log(b);
+
+// function add(a, b) {
+//     return;
+// }
+
+// Operadores en JS
+
+// Precedencia del operador y asociatividad.
+
+var a = 2, b = 3, c = 4;
+
+a = b = c;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+// Precedencia del operador y asociatividad.
