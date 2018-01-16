@@ -203,10 +203,18 @@ console.log(myVar);
 
 // valores predeterminados
 
-function greet(name) {
-    console.log('Hola ' + name);
-}
+// function greet(name) {
+//     name = name || '<Tu nombre aqui>';
+//     console.log('Hola ' + name);
+// }
 
-greet('Israel Martínez');
+// greet('Israel M');
+// greet();
 
 // valores predeterminados
+
+//Partes de Frameworks - Valores predeterminados
+
+window.valorNombre = window.valorNombre || 'No existe valorNombre';
+
+//Partes de Frameworks - Valores predeterminados
