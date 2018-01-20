@@ -215,6 +215,99 @@ console.log(myVar);
 
 //Partes de Frameworks - Valores predeterminados
 
-window.valorNombre = window.valorNombre || 'No existe valorNombre';
+// window.valorNombre = window.valorNombre || 'No existe valorNombre';
 
 //Partes de Frameworks - Valores predeterminados
+
+//clase 30 objetos y el punto.
+
+//esta no es la mejor manera de generar un objeto, pero solo es un ejemplo practico.
+// var person = new Object();
+
+// person["firstname"] = "Israel";
+// person["lastname"] = "Martínez";
+
+// var firtsNameProperty = "firstname";
+
+// console.log(person);
+// console.log(person[firtsNameProperty]);
+// //perador punto
+// console.log(person.lastname);
+
+// person.address = new Object();
+// person.address.street = "Calle Durazno 88";
+// person.address.city = "Edo Mex";
+// person.address.state = "Ecatepec";
+
+// console.log(person.address.street);
+// console.log(person.address.city);
+// console.log(person["address"]["state"]); //esto realiza lo mismo que el operador de arriba
+
+//clase 30 objetos y el punto.
+
+
+//clase 31 objetos y literales de objetos.
+
+// esta es la mejor manera de estructurar un objeto en JS
+// var persona = {
+//     name: 'Israel',
+//     lastname: 'Martínez',
+//     años: '35',
+//     direccion: {
+//         calle: 'Durazno',
+//         colonia: 'Luis Donaldo Colosio',
+//         lote: '8'
+//     }
+// };
+
+// function greet(persona) {
+//     console.log('Hola ' + persona.name);
+// }
+
+// greet(persona);
+// //  y creo un objeto al vuelo.
+// greet({
+//     name: 'Erika',
+//     lastname: 'Contreras'
+// })
+
+// console.log(persona);
+
+//clase 31 objetos y literales de objetos.
+
+// clase 32 falsificacion de espacios de nombre.
+
+// var saludo = 'Hello!';
+// var saludo = 'Hola!';
+
+// console.log(saludo);
+
+// var english = {
+//     greetings: {
+//         basic: 'Hello!'
+//     }
+// };
+
+// var spanish = {};
+
+// spanish.greet = 'Hola!';
+
+// console.log(english);
+
+// clase 32 falsificacion de espacios de nombre.
+
+// clase 33 JSON and object literal
+
+var objectLiteral = {
+    firstname: 'Isra',
+    isAProgramer: true
+};
+
+console.log(JSON.stringify(objectLiteral));
+
+var jsonValue = JSON.parse('{"firstname": "Mary", "isAProgramer": true}');
+
+console.log(jsonValue);
+
+
+// clase 33 JSON and object literal
