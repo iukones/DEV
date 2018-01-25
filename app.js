@@ -298,16 +298,134 @@ console.log(myVar);
 
 // clase 33 JSON and object literal
 
-var objectLiteral = {
-    firstname: 'Isra',
-    isAProgramer: true
-};
+// var objectLiteral = {
+//     firstname: 'Isra',
+//     isAProgramer: true
+// };
 
-console.log(JSON.stringify(objectLiteral));
+// console.log(JSON.stringify(objectLiteral));
 
-var jsonValue = JSON.parse('{"firstname": "Mary", "isAProgramer": true}');
+// var jsonValue = JSON.parse('{"firstname": "Mary", "isAProgramer": true}');
 
-console.log(jsonValue);
+// console.log(jsonValue);
 
 
 // clase 33 JSON and object literal
+
+// clase 34 las funciones son objetos.
+
+// function greet() {
+//     console.log('hola');
+// }
+
+// greet.language = 'english';
+// console.log(greet.language);
+
+// clase 34 las funciones son objetos.
+
+//clase 35 Declaracion de funcion y Expresion de funcion.
+
+// greet();
+
+// function greet() {        //todo esto es una declaracion de funcion.
+//     console.log('hola');
+// }
+
+
+
+// var anonimusGreet = function () {
+//     console.log('hi');              //aqui estoy creando un objeto sobre la marcha y poniendolo igual a esta variable.
+// }
+
+// anonimusGreet();
+
+// function log(a) {
+//     a();
+// }
+
+// log(function() {
+//     console.log('hola3'); //esto es una funcion de primera clase
+// });
+
+//clase 35 Declaracion de funcion y Expresion de funcion.
+
+//clase 36 Por Valor vs Por Referencia.
+
+// by value primitives (por valores primitivos)
+// var a = 3;
+// var b;
+
+// b = a; //aqui se crea un nuevo espacio en memoria para B y seran copias uno del otro.
+// a = 2;
+
+// console.log(a);
+// console.log(b);
+
+// by reference (all objects (including functions)) por referencia, todos los objetos inlcuyendo funciones.
+// var c = { greeting: 'hi'};
+// var d;
+
+// d = c; //aqui el operador ve que ambos son objetos y en lugar de establecer "d" con un nuevo espacio en memoria, simplemente señala "d" en al misma dirección, en el mismo lugar de memoria que apunta "c"
+
+// c.greeting = 'helloo'; //mutate
+
+// console.log(c);
+// console.log(d);
+
+//by reference (even as parameters)
+
+// function changeGreeting(obj) {
+//     obj.greeting = 'Hola'; // mutate object
+// }
+
+// changeGreeting(d);
+// console.log(c);
+// console.log(d);
+
+// el operador 'equals' configura un nuevo espacio en memoria (es una nueva direccion en memoria).
+// c = { greeting: 'nuevo saludo'};
+// console.log(c);
+// console.log(d);
+
+
+//clase 36 Por Valor vs Por Referencia.
+
+// clase 37 Objects, Functions, and "this"
+
+function a() {
+    console.log(this);
+    this.newVariable = 'Hola';
+}
+
+var b = function() {
+    console.log(this);
+}
+
+a();
+
+console.log(newVariable); // not good!
+
+b();
+
+
+var c = {
+    name: 'el objecto C',
+    log: function() {
+        var selft = this;
+
+        selft.name = 'actualiza el objeto C';
+        console.log(selft);
+
+        var setName = function(newname) {
+            selft.name = newname;
+        }
+
+        setName('actualiza de nuevo el objeto C');
+        console.log(selft);
+    }
+}
+
+c.log();
+
+
+// clase 37 Objects, Functions, and "this"
