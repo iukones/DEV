@@ -392,40 +392,111 @@ console.log(myVar);
 
 // clase 37 Objects, Functions, and "this"
 
-function a() {
-    console.log(this);
-    this.newVariable = 'Hola';
-}
+// function a() {
+//     console.log(this);
+//     this.newVariable = 'Hola';
+// }
 
-var b = function() {
-    console.log(this);
-}
+// var b = function() {
+//     console.log(this);
+// }
 
-a();
+// a();
 
-console.log(newVariable); // not good!
+// console.log(newVariable); // not good!
 
-b();
+// b();
 
 
-var c = {
-    name: 'el objecto C',
-    log: function() {
-        var selft = this;
+// var c = {
+//     name: 'el objecto C',
+//     log: function() {
+//         var selft = this;
 
-        selft.name = 'actualiza el objeto C';
-        console.log(selft);
+//         selft.name = 'actualiza el objeto C';
+//         console.log(selft);
 
-        var setName = function(newname) {
-            selft.name = newname;
-        }
+//         var setName = function(newname) {
+//             selft.name = newname;
+//         }
 
-        setName('actualiza de nuevo el objeto C');
-        console.log(selft);
-    }
-}
+//         setName('actualiza de nuevo el objeto C');
+//         console.log(selft);
+//     }
+// }
 
-c.log();
+// c.log();
 
 
 // clase 37 Objects, Functions, and "this"
+
+
+//clase 38 Array -  Matrices: colecciones de cualquier cosa.
+
+// var arr = [
+//     1, //numerico
+//     false, //boolean
+//     {
+//         name: 'Isra',
+//         direccion: 'Ecatepec' //tipo objeto.
+//     },
+//     function(name) {
+//         var greeting = 'Hola ';
+//         console.log(greeting + name); //tipo funcion.
+//     },
+//     "De nuevo" //tipo cadena.
+
+// ];
+
+// console.log(arr);
+// arr[3](arr[2].name);
+
+//clase 38 Array -  Matrices: colecciones de cualquier cosa.
+
+// clase 40 sobre carga de funciones
+
+// function greet(firstname, lastname, language) {
+
+//     language = language || 'en';
+
+//     if (language === 'en') {
+//         console.log('Hello ' + firstname + ' ' + lastname);        
+//     }
+
+//     if (language === 'es') {
+//         console.log('Hola ' + firstname + ' ' + lastname);
+//     }
+    
+// }
+
+// function greetEnglish(firstname, lastname) {
+//     greet(firstname, lastname, 'en');
+// }
+
+// function greetSpanish(firstname, lastname) {
+//     greet(firstname, lastname, 'es');
+// }
+
+// greet('Jhon', 'Doe', 'en');
+// greet('Jhon', 'Doe', 'es');
+// greetEnglish('Jhon', 'Doe');
+// greetSpanish('Jhon', 'Doe');
+
+// clase 40 sobre carga de funciones
+
+
+// clase 42 insercion automatica de punto y coma
+
+function getPerson() {
+    // return
+    // {
+    //     firstname: 'Israel'
+    // }
+    return {
+        firstname: 'Israel'
+    }
+}
+
+console.log(getPerson());
+
+// clase 42 insercion automatica de punto y coma
