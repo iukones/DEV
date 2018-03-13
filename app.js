@@ -500,3 +500,34 @@ function getPerson() {
 console.log(getPerson());
 
 // clase 42 insercion automatica de punto y coma
+
+
+
+
+// clase 44 expresiones de funciones invocadas inmediatamente
+
+// function statement (declaracion de funciones)
+function greet(name) {
+    console.log('hola' + name);
+}
+greet('Isra');
+
+//using a function expression (usando una expresión de función).
+var greetFunc = function(name) {
+    console.log('hola' + name);   
+};
+greetFunc('Isr');
+
+//using an Inmmediately Invoked Function Expression (IIFE), utilizando una expresión de función Inmediatamente invocada.
+var greeting = function(name) {
+    console.log('hello' + name);    
+}('Israel');
+
+// **********
+var firstname = 'iukones';
+(function(name) {
+    var greeting = 'Inside IIFE: Hello';
+    console.log(greeting + ' ' + name);    
+}(firstname)); // IIFE Inmediatamente invocado expresion de funcion.
+
+// clase 44 expresiones de funciones invocadas inmediatamente
