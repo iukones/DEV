@@ -487,17 +487,17 @@ console.log(myVar);
 
 // clase 42 insercion automatica de punto y coma
 
-function getPerson() {
+// function getPerson() {
     // return
     // {
     //     firstname: 'Israel'
     // }
-    return {
-        firstname: 'Israel'
-    }
-}
+//     return {
+//         firstname: 'Israel'
+//     }
+// }
 
-console.log(getPerson());
+// console.log(getPerson());
 
 // clase 42 insercion automatica de punto y coma
 
@@ -507,27 +507,94 @@ console.log(getPerson());
 // clase 44 expresiones de funciones invocadas inmediatamente
 
 // function statement (declaracion de funciones)
-function greet(name) {
-    console.log('hola' + name);
-}
-greet('Isra');
+// function greet(name) {
+//     console.log('hola' + name);
+// }
+// greet('Isra');
 
 //using a function expression (usando una expresión de función).
-var greetFunc = function(name) {
-    console.log('hola' + name);   
-};
-greetFunc('Isr');
+// var greetFunc = function(name) {
+//     console.log('hola' + name);   
+// };
+// greetFunc('Isr');
 
 //using an Inmmediately Invoked Function Expression (IIFE), utilizando una expresión de función Inmediatamente invocada.
-var greeting = function(name) {
-    console.log('hello' + name);    
-}('Israel');
+// var greeting = function(name) {
+//     console.log('hello' + name);    
+// }('Israel');
 
 // **********
-var firstname = 'iukones';
-(function(name) {
-    var greeting = 'Inside IIFE: Hello';
-    console.log(greeting + ' ' + name);    
-}(firstname)); // IIFE Inmediatamente invocado expresion de funcion.
+// var firstname = 'iukones';
+
+// (function(name) {
+
+//     var greeting = 'Inside IIFE: Hello';
+//     console.log(greeting + ' ' + name); 
+      
+// }(firstname)); // IIFE Inmediatamente invocado expresion de funcion.
 
 // clase 44 expresiones de funciones invocadas inmediatamente
+
+// clase 45 IIFE y Safe Code
+
+// (function(global, name) {
+
+//     var greeting = 'Hello';
+//     global.greeting = 'Hello';
+//     console.log(greeting + ' ' + name);
+    
+// }(window, 'Israel')); // IIFE
+
+// clase 45 IIFE y Safe Code
+
+// clase 46 Entendiendo los cierres (UNDERSTANDING CLOSURES)
+
+function greet(whattosay) {
+    return function(name){
+        console.log(whattosay + ' ' + name);
+    }
+}
+
+// greet('Hi')('Isra');
+var sayHi = greet('Hi');
+sayHi('Isra');
+
+
+// clase 46 Entendiendo los cierres (UNDERSTANDING CLOSURES)
+
+// clase 47 Entendiendo los cierres parte 2(UNDERSTANDING CLOSURES)
+
+function creaSumador(x) {
+    return function(y) {
+        return x + y;
+    };
+}
+
+var suma5 = creaSumador(5);
+var suma10 = creaSumador(10);
+
+console.log(suma5(2)); // muestra 7
+console.log(suma10(2)); // muestra 12
+
+
+function buildFunctions () {
+    var arr = [];
+
+    for (var i = 0; i < 3; i++) {
+        arr.push(
+            function() {
+                console.log(i);
+            }
+        )
+        
+    } 
+    return arr;
+}
+
+var fs = buildFunctions();
+
+fs[0]();
+fs[1]();
+fs[2]();
+
+// clase 47 Entendiendo los cierres parte 2(UNDERSTANDING CLOSURES)
