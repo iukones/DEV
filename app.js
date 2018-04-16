@@ -582,7 +582,7 @@ function buildFunctions () {
 
     for (var i = 0; i < 3; i++) {
         arr.push(
-            function() {
+            function () {
                 console.log(i);
             }
         )
@@ -598,3 +598,26 @@ fs[1]();
 fs[2]();
 
 // clase 47 Entendiendo los cierres parte 2(UNDERSTANDING CLOSURES)
+
+// clase 48 Function Factories
+
+function makeGreeting(language) {
+
+    return function (firstname, lastname) {
+        if (language === 'en') {
+            console.log('Hello ' + firstname + ' ' + lastname);
+        }
+        if (language === 'es') {
+            console.log('Hola ' + firstname + ' ' + lastname);
+        }
+    }
+}
+
+var greetEnglish = makeGreeting('en');
+var greetSpanish = makeGreeting('es');
+
+greetEnglish('Israel', 'Martinez');
+greetSpanish('Israel', 'Martinez');
+
+// clase 48 Function Factories
+
