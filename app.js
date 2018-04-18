@@ -621,3 +621,13 @@ greetSpanish('Israel', 'Martinez');
 
 // clase 48 Function Factories
 
+// atravesando el DOM
+const component = document.querySelector('.component');
+const title = component.querySelector('.component__title');
+
+title.innerHTML = "hola mundo";
+
+console.log(title);
+
+
+// atravesando el DOM
