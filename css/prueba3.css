@@ -102,6 +102,13 @@ header, footer, nav, section, article, hgroup, figure {
     font-size: 7px;
     line-height: 1.5;
     color: #dca41b;
+    /* background-color: aqua;
+    background-image: url(/img/module_table_bottom.png),
+    url(img/module_table_top.png);
+    background-attachment: scroll, scroll, fixed;
+    background-size: 960px, 960px, 100% 100%;
+    background-repeat: repeat-y;
+    background-position: top left, top right, top left; */
   }  
   
   .grid {

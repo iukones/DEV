@@ -621,7 +621,7 @@ greetSpanish('Israel', 'Martinez');
 
 // clase 48 Function Factories
 
-
+// ejercicio extras al curso
 
 // atravesando el DOM
 const component = document.querySelector('.component');
@@ -634,3 +634,24 @@ console.log(title);
 
 
 // atravesando el DOM
+
+// reemplazando texto desde JS
+
+function setText(node, text) {
+    let c = node.firsChild;
+    if (c && !c.nextSibling && c.nodeType == 3)
+        c.data = text;
+        else
+        node.textContent = text;
+}
+
+setText(document.querySelector('h1'), 'a title');
+setText(document.querySelector('p'), 'a paragraph');
+
+setText(document.querySelector('h1'), 'a title [2]');
+setText(document.querySelector('p'), 'a paragraph [2]');
+
+
+// reemplazando texto desde JS
+
+// ejercicio extras al curso
