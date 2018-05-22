@@ -460,13 +460,13 @@ console.log(myVar);
 //     language = language || 'en';
 
 //     if (language === 'en') {
-//         console.log('Hello ' + firstname + ' ' + lastname);        
+//         console.log('Hello ' + firstname + ' ' + lastname);
 //     }
 
 //     if (language === 'es') {
 //         console.log('Hola ' + firstname + ' ' + lastname);
 //     }
-    
+
 // }
 
 // function greetEnglish(firstname, lastname) {
@@ -514,13 +514,13 @@ console.log(myVar);
 
 //using a function expression (usando una expresión de función).
 // var greetFunc = function(name) {
-//     console.log('hola' + name);   
+//     console.log('hola' + name);
 // };
 // greetFunc('Isr');
 
 //using an Inmmediately Invoked Function Expression (IIFE), utilizando una expresión de función Inmediatamente invocada.
 // var greeting = function(name) {
-//     console.log('hello' + name);    
+//     console.log('hello' + name);
 // }('Israel');
 
 // **********
@@ -529,8 +529,8 @@ console.log(myVar);
 // (function(name) {
 
 //     var greeting = 'Inside IIFE: Hello';
-//     console.log(greeting + ' ' + name); 
-      
+//     console.log(greeting + ' ' + name);
+
 // }(firstname)); // IIFE Inmediatamente invocado expresion de funcion.
 
 // clase 44 expresiones de funciones invocadas inmediatamente
@@ -542,7 +542,7 @@ console.log(myVar);
 //     var greeting = 'Hello';
 //     global.greeting = 'Hello';
 //     console.log(greeting + ' ' + name);
-    
+
 // }(window, 'Israel')); // IIFE
 
 // clase 45 IIFE y Safe Code
@@ -586,8 +586,8 @@ function buildFunctions () {
                 console.log(i);
             }
         )
-        
-    } 
+
+    }
     return arr;
 }
 
@@ -621,9 +621,17 @@ greetSpanish('Israel', 'Martinez');
 
 // clase 48 Function Factories
 
+// clase 49 Closures and Callbacks
+
+
+
+// clase 49 Closures and Callbacks
+
 // ejercicio extras al curso
 
 // atravesando el DOM
+
+    // recorrer hacia abajo desde un elemento específico
 const component = document.querySelector('.component');
 const title = component.querySelector('.component__title');
 
@@ -632,8 +640,63 @@ title.innerHTML = "hola mundo";
 console.log(component);
 console.log(title);
 
+const list = document.querySelector('.list');
+const listItem = list.children;
+
+console.log(listItem);
+
+// convieritendo la coleccion a una matriz
+const array = Array.from(HTMLCollection);
+array.forEach(element => {
+    // do whatever you want
+});
+
+// Seleccionar un niño específico
+const listItems = document.querySelectorAll('li');
+
+const firstItem = listItems[0];
+const secondItem = listItems[1];
+const thirdItem = listItems[2];
+const fourthItem = listItems[3];
+const fifthItem = listItems[4];
+
+console.log(firstItem);
+console.log(secondItem);
+console.log(thirdItem);
+console.log(fourthItem);
+console.log(fifthItem);
+
+    // recorrer hacia abajo desde un elemento específico
+
+    // Atravesando hacia arriba
+
+const firstListItem = document.querySelector('li');
+const lists = firstListItem.parentElement;
+
+console.log(lists);
+
+// más cercano
+
+const firstLink = document.querySelector('a');
+const lists2 = firstLink.closest('.list');
+console.log(lists2);
+
+const firstLinkThroughClosest = firstLink.closest('a');
+console.log(firstLinkThroughClosest);
+
+// más cercano
+    // Atravesando hacia arriba
+
+
+    // atravesando de lado
+
+
+
+    // atravesando de lado
 
 // atravesando el DOM
+
+
 
 // reemplazando texto desde JS
 
