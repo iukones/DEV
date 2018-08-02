@@ -102,7 +102,7 @@ button:focus {
 
 /* line 80, C:/Users/imartinez/Documents/Proyect/iukones/scss/_base.scss */
 .sidebar h1 img {
-  margin: -3em 0 -2em;
+  /* margin: -3em 0 -2em; */
   width: 200px;
   height: auto;
 }
@@ -984,7 +984,7 @@ svg {
 }
 .sobre--me .col ul {
   margin-top: 20px;
-  
+
 }
 .sobre--me .col li {
   margin-bottom: 0.5rem;

@@ -622,10 +622,159 @@ greetSpanish('Israel', 'Martinez');
 // clase 48 Function Factories
 
 // clase 49 Closures and Callbacks
+function sayHiLater() {
+    var NewGreeting = 'Hi!';
 
+    setTimeout(() => {
+        console.log(NewGreeting);
+    }, 5000);
 
+}
+sayHiLater();
+//jQuery uses function expression and first-class functions!
+//$("button").click(function() {
+
+//});
+
+function tellMeWhenDone(callback) {
+    var a = 1000; //some work
+    var b = 2000; //some work
+
+    callback(); //the 'callback', it run the function I give it!
+}
+
+tellMeWhenDone(function() {
+    console.log('I am done!');
+});
+
+tellMeWhenDone(function() {
+    console.log('All done...');
+});
 
 // clase 49 Closures and Callbacks
+
+//clese 50 llamar, aplicar, enlazar, call(), apply() and bind().
+var person = {
+    firstname: 'Israel',
+    lastname: 'Martinez',
+    getFullName: function() {
+        var fullname = this.firstname + ' ' + this.lastname;
+        return fullname;
+    }
+}
+
+var logName = function(lang1, lang2) {
+    console.log('Logged: ' + this.getFullName());
+    console.log('Argumnets: ' + lang1 + ' ' + lang2);
+    console.log('---------------');
+}
+
+var logPersonName = logName.bind(person);
+logPersonName('Español');
+
+logName.call(person, 'en', 'es');
+logName.apply(person, ['esp', 'eng']);
+
+//function borrowing
+var person2 = {
+    firstname: 'Erika',
+    lastname: 'Contreras'
+}
+console.log(person.getFullName.apply(person2));
+
+//function currying
+function multiply(a, b) {
+    return a*b;
+}
+
+var multiplyByTwo = multiply.bind(this, 2);
+console.log(multiplyByTwo(4));
+//clese 50 llamar, aplicar, enlazar, call(), apply() and bind().
+
+//clese 51 fuctional programming (programacion funcional con JS)
+function mapForEach(arr, fn) {
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        newArr.push(
+            fn(arr[i])
+        )
+    };
+    return newArr;
+}
+
+var arr1 = [1, 2, 3];
+console.log(arr1);
+
+var arr2 = mapForEach(arr1, function(item) {
+    return item * 2;
+});
+console.log(arr2);
+
+var arr3 = mapForEach(arr1, function(item) {
+    return item > 2;
+});
+console.log(arr3);
+
+var checkPastLimit = function(limiter, item) {
+    return item > limiter
+}
+var arr4 = mapForEach(arr1, checkPastLimit.bind(this, 1));
+console.log(arr4);
+
+var checkPastLimitSimplified = function(limiter) {
+    return function(limiter, item) {
+        return item < limiter;
+    }.bind(this, limiter);
+}
+
+var arr5 = mapForEach(arr1, checkPastLimitSimplified(4));
+console.log(arr5);
+
+//clese 51 fuctional programming (programacion funcional con JS)
+
+//clese 52 fuctional programming (programacion funcional con JS) 2
+// utilizando UnderscoreJS
+var arr6 = _.map(arr1, function(item) { return item * 3});
+console.log(arr6);
+
+var arr7 = _.filter([2,3,4,5,6,7], function(item) { return item % 2 === 0;});
+console.log(arr7);
+//clese 52 fuctional programming (programacion funcional con JS) 2
+
+// clase 53 object-oriented JS and prototypal inheritance (JS orientado a objetos y herencia de prototipos)
+// clase 54 understanding the prototype (comprender el prototipo en JS)
+var person = {
+    doddleName: 'Default',
+    doddleLastName: 'Default',
+    // creo un metodo dentro del objeto
+    getFulldoddle: function() {
+        return this.doddleName + ' ' + this.doddleLastName;
+    }
+}
+// creo un segundo objeto como ejemplo
+var elian = {
+    doddleName: 'Elian',
+    doddleLastName: 'Martinez'
+}
+// don't do this EVER! for demo purposes only!!!
+elian.__proto__ = person;
+console.log(elian.getFulldoddle()); //Elian Martinez
+console.log(elian.doddleName); //Elian
+
+// configuramos un nuevo objeto de ejemplo
+var jane = {
+    doddleName: 'Jane'
+}
+jane.__proto__ = person;
+console.log(jane.getFulldoddle()); //jane - Default
+
+// clase 54 understanding the prototype (comprender el prototipo en JS)
+
+// clase 55 Everything is an object (or primitive)
+
+// clase 55 Everything is an object (or primitive)
+
+
 
 // ejercicio extras al curso
 
@@ -711,10 +860,17 @@ function setText(node, text) {
 setText(document.querySelector('h1'), 'a title');
 setText(document.querySelector('p'), 'a paragraph');
 
-setText(document.querySelector('h1'), 'a title [2]');
-setText(document.querySelector('p'), 'a paragraph [2]');
+setText(document.querySelector('h1'), 'reemplazando texto desde JS');
+setText(document.querySelector('p'), 'texto lorem');
 
 
 // reemplazando texto desde JS
+
+// verifica si un checkbox esta activo o no
+function verificaChecked() {
+    var x = document.getElementById("myRadio").checked;
+    console.log(x);
+    document.getElementById("respuesta").innerHTML = x;
+}
 
 // ejercicio extras al curso

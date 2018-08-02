@@ -1,0 +1,66 @@
+<svg version="1.1" id="ByJW7iqhf" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><style type="text/css">@-webkit-keyframes BJxk-7i9hM_Animation {
+    30% {
+        opacity: 0.1
+    }
+    78.89% {
+        opacity: 0.3
+    }
+    93.33% {
+        opacity: 1
+    }
+    0% {
+        opacity: 0.1
+    }
+    100% {
+        opacity: 1
+    }
+}
+@keyframes BJxk-7i9hM_Animation {
+    30% {
+        opacity: 0.1
+    }
+    78.89% {
+        opacity: 0.3
+    }
+    93.33% {
+        opacity: 1
+    }
+    0% {
+        opacity: 0.1
+    }
+    100% {
+        opacity: 1
+    }
+}
+#ByJW7iqhf * {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1)
+}
+#BJxk-7i9hM_SJGGNs5hf {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    transform-box: fill-box;
+    -webkit-transform: translate(10px, 0px);
+            transform: translate(10px, 0px)
+}
+#BJxk-7i9hM {
+    -webkit-animation-name: BJxk-7i9hM_Animation;
+            animation-name: BJxk-7i9hM_Animation;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    transform-box: fill-box;
+    opacity: 0.1
+}</style><style/>
+<g id="BJxk-7i9hM">
+	<path d="M12,0.5C6.997,0.5,2.853,4.197,2.125,9l0,0l0,0C2.051,9.491,2,9.989,2,10.5V13c0,2.864,2.201,5.224,5,5.478V23&#10;&#9;&#9;c0,0.276,0.224,0.5,0.5,0.5S8,23.276,8,23v-5c0-0.276-0.224-0.5-0.5-0.5C5.019,17.5,3,15.481,3,13v-2.5&#10;&#9;&#9;c0-0.34,0.023-0.675,0.06-1.005C5.002,9.466,6.941,8.077,6.941,5c0-0.276-0.224-0.5-0.5-0.5s-0.5,0.224-0.5,0.5&#10;&#9;&#9;c0,2.438-1.356,3.382-2.705,3.48C4.157,4.488,7.733,1.5,12,1.5s7.843,2.988,8.763,6.98C19.415,8.382,18.059,7.438,18.059,5&#10;&#9;&#9;c0-0.276-0.224-0.5-0.5-0.5s-0.5,0.224-0.5,0.5c0,3.077,1.939,4.466,3.882,4.495C20.977,9.825,21,10.16,21,10.5V13&#10;&#9;&#9;c0,2.481-2.019,4.5-4.5,4.5c-0.276,0-0.5,0.224-0.5,0.5v5c0,0.276,0.224,0.5,0.5,0.5S17,23.276,17,23v-4.522&#10;&#9;&#9;c2.799-0.253,5-2.613,5-5.478v-2.5C22,4.986,17.514,0.5,12,0.5z" id="r1WybQic3f"/>
+	<path d="M10.5,17.5c-0.276,0-0.5,0.224-0.5,0.5v5c0,0.276,0.224,0.5,0.5,0.5S11,23.276,11,23v-5C11,17.724,10.776,17.5,10.5,17.5z" id="BJGy-Xi93G"/>
+	<path d="M13.5,17.5c-0.276,0-0.5,0.224-0.5,0.5v5c0,0.276,0.224,0.5,0.5,0.5S14,23.276,14,23v-5C14,17.724,13.776,17.5,13.5,17.5z" id="ryQyZ7jq2M"/>
+	<path d="M20,13c0-1.93-1.57-3.5-3.5-3.5S13,11.07,13,13s1.57,3.5,3.5,3.5S20,14.93,20,13z M14,13c0-1.378,1.122-2.5,2.5-2.5&#10;&#9;&#9;S19,11.622,19,13s-1.122,2.5-2.5,2.5S14,14.378,14,13z" id="B1EkZ7jc3f"/>
+	<path d="M7.5,9.5C5.57,9.5,4,11.07,4,13s1.57,3.5,3.5,3.5S11,14.93,11,13S9.43,9.5,7.5,9.5z M7.5,15.5C6.122,15.5,5,14.378,5,13&#10;&#9;&#9;s1.122-2.5,2.5-2.5S10,11.622,10,13S8.878,15.5,7.5,15.5z" id="ryBy-QschG"/>
+	<path d="M12.892,15.666l-0.445-0.89c-0.17-0.339-0.725-0.339-0.895,0l-0.5,1c-0.078,0.155-0.069,0.339,0.022,0.486&#10;&#9;&#9;S11.327,16.5,11.5,16.5h1c0.007,0,0.013,0,0.02,0c0.276,0,0.5-0.224,0.5-0.5C13.02,15.872,12.972,15.754,12.892,15.666z" id="SyUy-Xjq3f"/>
+</g>
+</svg>
